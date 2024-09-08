@@ -4,7 +4,7 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { LuLinkedin } from "react-icons/lu";
 import { FiGithub } from "react-icons/fi";
-import { FiFacebook } from "react-icons/fi";
+import { RxVercelLogo } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 
 
@@ -22,10 +22,10 @@ const Footer = () => {
             </ul>
           </nav>
           <div className="icons">
-            <FaInstagram size={20} />
-            <LuLinkedin size={20} />
-            <FiGithub size={20} />
-            <FiFacebook size={20} />
+            <Link to="https://www.instagram.com/mubashir_1520/?hl=en" target='blank'><FaInstagram size={24} /></Link> 
+            <Link to="https://www.linkedin.com/in/mubashir-ahmad-hamza-a5961b279/" target='blank'><LuLinkedin size={24} /></Link>
+            <Link to="https://github.com/MubashirA4" target='blank'><FiGithub size={24} /></Link>
+            <Link to="https://vercel.com/mubashir-ahmad-hamzas-projects" target='blank'><RxVercelLogo size={24} /></Link>
           </div>
         </div>
         <div className="btl">

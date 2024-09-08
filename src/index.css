@@ -11,162 +11,273 @@
 :root {
   --primary-color: rgb(78, 82, 90);
 }
-
+:root{
+  --secondary-color: rgb(36, 38, 47);
+}
+:root {
+  --framer-font-family: "Poppins", "Poppins Placeholder", sans-serif;
+}
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 0px;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 22px 0px;
-}
-header .logo h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-header nav ul {
-  list-style-type: none;
-  display: flex;
-}
-header nav ul li {
-  display: inline-block;
-  padding: 3px 25px;
-}
-header nav li a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-family: Inter, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: large;
-}
-header .logo-msg .msg {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  object-position: center center;
-  object-fit: cover;
-  image-rendering: auto;
-  background-color: black;
-  color: #ffffff;
-  padding: 7px;
-  border-radius: 20px;
-}
-/* Home */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 40px 0px;
-  section {
-    margin: 30px 0px;
-    a {
-      text-decoration: none;
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0px;
+    .logo {
+      padding: 2px 0px;
+      a{
+        text-decoration: none;
+        font-family: var(--framer-link-font-family, var(--framer-font-family, "Inter", "Inter Placeholder", sans-serif));
+        font-weight: 600;
+        font-style: normal;
+        font-size: large;
+        color: rgb(36, 38, 47);
+      }
     }
-    h4 {
-      font-family: "Poppins", "Poppins Placeholder", sans-serif;
-      font-size: 24px;
-      font-weight: 400;
-      letter-spacing: -2px;
-      color: var(--primary-color);
+    nav {
+      ul {
+        list-style-type: none;
+        display: flex;
+        li {
+          display: inline-block;
+          padding: 3px 25px;
+          a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-family: Inter, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: large;
+          }
+        }
+      }
     }
+    .logo-msg {
+      .msg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        object-position: center center;
+        object-fit: cover;
+        image-rendering: auto;
+        background-color: black;
+        color: #ffffff;
+        padding: 7px;
+        border-radius: 20px;
+      }
+    }
+  }
+  /* Home */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0px;
+    section {
+      margin: 30px 0px;
+      a {
+        text-decoration: none;
+      }
+      h4 {
+        font-family: "Poppins", "Poppins Placeholder", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -2px;
+        color: var(--primary-color);
+      }
+      h2 {
+        font-family: "Poppins", "Poppins Placeholder", sans-serif;
+        font-size: 70px;
+        font-weight: 600;
+        color: rgb(36, 38, 47);
+        span {
+          color: rgb(110, 6, 242);
+        }
+      }
+      p {
+        font-family: "Poppins", "Poppins Placeholder", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(78, 82, 90);
+      }
+      .links {
+        display: flex;
+        gap: 20px;
+        margin: 20px 0px;
+        .git {
+          background-color: rgb(110, 26, 245);
+          color: #ffffff;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          font-family: Inter, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: large;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        .bp {
+          background: none;
+          padding: 10px 15px;
+          font-family: Inter, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: large;
+          border: 1px solid var(--primary-color);
+          border-radius: 5px;
+          cursor: pointer;
+          &:hover {
+            background-color: #646262;
+            color: white;
+          }
+        }
+      }
+    }
+    aside {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Center the image vertically */
+        width: 450px; /* Adjust the width as needed */
+        height: 450px; /* Adjust the height as needed */
+        border-radius: 50%; /* Make the image circular */
+        overflow: hidden;
+        border: 1px solid var(--primary-color);
+        padding: 40px;
+        img {
+          width: 100%; /* Make the image fill the container */
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .h-project {
     h2 {
       font-family: "Poppins", "Poppins Placeholder", sans-serif;
-      font-size: 70px;
-      font-weight: 600;
+      font-size: 50px;
+      font-weight: 700;
       color: rgb(36, 38, 47);
-      span {
+      b {
         color: rgb(110, 6, 242);
       }
     }
-    p {
-      font-family: "Poppins", "Poppins Placeholder", sans-serif;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      color: rgb(78, 82, 90);
-    }
-    .links {
-      display: flex;
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
-      margin: 20px 0px;
-      .git {
-        background-color: rgb(110, 26, 245);
-        color: #ffffff;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        font-family: Inter, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: large;
-        cursor: pointer;
-        &:hover {
-          opacity: 0.7;
-        }
-      }
-      .bp {
-        background: none;
-        padding: 10px 15px;
-        font-family: Inter, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: large;
-        border: 1px solid var(--primary-color);
-        border-radius: 5px;
-        cursor: pointer;
-        &:hover {
-          background-color: #646262;
-          color: white;
+      .card1 {
+        img {
+          width: 100%;
         }
       }
     }
   }
-  aside {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    .image {
+  .skills {
+    margin: 50px 0px;
+    h2 {
+      margin: 14px 0px;
+      font-family: "Poppins", "Poppins Placeholder", sans-serif;
+      font-size: 56px;
+      font-weight: 700;
+      color: rgb(36, 38, 47);
+      b {
+        color: rgb(110, 6, 242);
+      }
+    }
+    .inner-skill {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      h4 {
+        font-family: "Poppins", "Poppins Placeholder", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: rgb(36, 38, 47);
+        margin-bottom: 14px;
+      }
+      p {
+        font-family: "Poppins", "Poppins Placeholder", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(36, 38, 47);
+      }
+    }
+  }
+  .contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0px;
+    section{
+      margin: 60px 0px;
+      h4{
+        font-family: "Poppins", "Poppins Placeholder", sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        color: var(--secondary-color);
+        b{
+          color: rgb(110, 6, 242);
+        }
+      }
+      p{
+        font-family: "Poppins", "Poppins Placeholder", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--secondary-color);
+      }
+      .email{
+        border: 1px solid var(--secondary-color);
+        border-radius: 50%;
+        padding: 10px;
+        display: inline-flex; /* Ensure alignment with text */
+        align-items: center;
+        /* margin-right: 15px; */
+        margin: 10px 20px 10px 0px;
+      }
+      a{
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-family: "Poppins", "Poppins Placeholder", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    aside {
       display: flex;
       justify-content: center;
-      align-items: center; /* Center the image vertically */
-      width: 450px; /* Adjust the width as needed */
-      height: 450px; /* Adjust the height as needed */
-      border-radius: 50%; /* Make the image circular */
-      overflow: hidden;
-      border: 1px solid var(--primary-color);
-      padding: 40px;
-      img {
-        width: 100%; /* Make the image fill the container */
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
+      margin-top: 30px;
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Center the image vertically */
+        width: 450px; /* Adjust the width as needed */
+        height: 450px; /* Adjust the height as needed */
+        border-radius: 50%; /* Make the image circular */
+        overflow: hidden;
+        border: 1px solid var(--primary-color);
+        padding: 40px;
+        img {
+          width: 100%; /* Make the image fill the container */
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
       }
     }
   }
+
+
 }
-.h-project{
-  h2{
-    font-family: "Poppins", "Poppins Placeholder", sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    color: rgb(36, 38, 47);
-    b {
-      color: rgb(110, 6, 242);
-    }
-  }
-    .cards{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-      gap: 20px;
-      .card{
-        width: 100px;
-      }
-    }
-}
+
 /* Form */
 .form {
   width: 450px;
@@ -231,7 +342,9 @@ footer {
   .icons {
     display: flex;
     gap: 20px;
-    color: var(--primary-color);
+    a{
+      color: var(--primary-color);
+    }
   }
   .iwt {
     h2 {

@@ -8,7 +8,7 @@ const Header = () => {
     <div className="container">
       <header>
         <div className="logo">
-          <h2>MBH</h2>
+          <Link to="/" >MBH</Link>
         </div>
         <nav>
           <ul>
@@ -18,7 +18,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="logo-msg">
-          <Link to=""><BiMessageSquareDetail className='msg'/></Link>
+          <Link to="/contact"><BiMessageSquareDetail className='msg'/></Link>
         </div>
       </header>
     </div>
