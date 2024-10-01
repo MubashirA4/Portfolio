@@ -1,0 +1,47 @@
+.about {
+  h4 {
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgba(36, 38, 47, 1);
+    b {
+      color: rgb(110, 6, 242);
+    }
+  }
+  .header {
+    h4{
+        margin-top: 12vh;
+    }
+    .t-border {
+      position: relative;
+    }
+    p {
+      &::after {
+        content: " ";
+        border-left: 10px solid rgb(110, 6, 242);
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      font-family: Poppins;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      color: rgba(78, 82, 90, 1);
+      margin-left: 30px;
+    }
+  }
+  .story{
+    margin-bottom: 10vh;
+    h4{
+        margin: 12vh 0px 26px 0px;
+    }
+    p{
+        font-family: Poppins;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(78, 82, 90, 1);
+    }
+  }
+}
