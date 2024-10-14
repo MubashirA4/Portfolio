@@ -1,8 +1,10 @@
 import React from 'react'
+import './css/contact.css'
 import { Link } from 'react-router-dom'
 import { BsEnvelope } from "react-icons/bs";
 import { BsTelephone } from "react-icons/bs";
 import Mubashir from "../home/assets/Mubashir.jpeg"
+
 
 const Contact = () => {
   return (

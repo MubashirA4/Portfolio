@@ -91,6 +91,7 @@
     }
   }
   .h-project {
+    margin-bottom: 10rem;
     h2 {
       font-family: "Poppins", "Poppins Placeholder", sans-serif;
       font-size: 50px;
@@ -101,12 +102,11 @@
       }
     }
     .cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+     display: flex;
       .card1 {
         img {
           width: 100%;
+          height: 60%;
         }
       }
     }
@@ -185,7 +185,7 @@
   }
   .h-project{
     .cards{
-      grid-template-columns: 1fr !important;
+      flex-direction: column;
     }
   }
 }
