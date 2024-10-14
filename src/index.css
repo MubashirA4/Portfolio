@@ -73,7 +73,7 @@
       display: none;
       color: rgb(153, 153, 153);
     }
-    @media screen and (max-width: 808px) {
+    @media screen and (max-width: 800px) {
       .bar_menu {
         display: block;
       }
@@ -95,7 +95,7 @@
             padding: 6px 0px;
           }
           .logo-msg {
-            margin: 0;
+            margin: 0px !important;
             a {
               color: var(--primary-color);
               text-decoration: none;
@@ -112,7 +112,7 @@
       }
     }
   }
-  @media screen and (max-width: 1054px) {
+  @media screen and (max-width: 1024px) {
     header{
       ul{
         .logo-msg {

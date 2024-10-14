@@ -171,3 +171,21 @@
     }
   }
 }
+@media screen and (max-width: 800px) {
+  .inner-skill {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main {
+    grid-template-columns: 1fr !important;
+  }
+  .inner-skill {
+    grid-template-columns: 1fr 1fr;
+  }
+  .h-project{
+    .cards{
+      grid-template-columns: 1fr !important;
+    }
+  }
+}

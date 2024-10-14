@@ -1,0 +1,14 @@
+.creation{
+    margin-top: 50px;
+    h4{
+        font: 700 80px/1.3em poppins;
+        color: rgb(36, 38, 47);
+        span{
+            color: rgb(110, 6, 242);
+        }
+    }
+    p{
+        font: 400 22px/1.5em Poppins;
+        color: rgba(78, 82, 90,1);
+    }
+}
