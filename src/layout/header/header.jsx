@@ -15,7 +15,7 @@ const Header = () => {
     // Toggle showIcon when the menu is opened or closed
     setShowIcon(showMenu ? false : true);
   };
-  return (
+  return ( 
     <div className="container">
       <header>
         <div className="logo">
